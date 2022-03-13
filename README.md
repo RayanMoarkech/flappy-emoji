@@ -1,8 +1,8 @@
-# flappy-emoji
+# Flappy Emoji
  
-App on the Apple [AppStore](https://apps.apple.com/app/void-jump/id1071479281)
+App on the Apple [AppStore](https://apps.apple.com/app/id918506662)
 
-More details about the app: [Click Here](https://appadvice.com/game/app/void-jump/1071479281)
+More details about the app: [Click Here](https://appadvice.com/game/app/flappy-emo/918506662)
 
 Environment
 -

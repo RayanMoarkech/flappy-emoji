@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A122798B19C3107A002520DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A122798A19C3107A002520DB /* Foundation.framework */; };
+		A122798D19C3107A002520DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A122798C19C3107A002520DB /* CoreGraphics.framework */; };
+		A122798F19C3107A002520DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A122798E19C3107A002520DB /* UIKit.framework */; };
+		A122799519C3107A002520DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A122799319C3107A002520DB /* InfoPlist.strings */; };
+		A122799719C3107A002520DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A122799619C3107A002520DB /* main.m */; };
+		A122799B19C3107A002520DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A122799A19C3107A002520DB /* AppDelegate.m */; };
+		A122799E19C3107A002520DB /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A122799C19C3107A002520DB /* Main_iPhone.storyboard */; };
+		A12279A119C3107A002520DB /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A122799F19C3107A002520DB /* Main_iPad.storyboard */; };
+		A12279A419C3107A002520DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12279A319C3107A002520DB /* ViewController.m */; };
+		A12279A619C3107A002520DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A12279A519C3107A002520DB /* Images.xcassets */; };
+		A12279AD19C3107A002520DB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12279AC19C3107A002520DB /* XCTest.framework */; };
+		A12279AE19C3107A002520DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A122798A19C3107A002520DB /* Foundation.framework */; };
+		A12279AF19C3107A002520DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A122798E19C3107A002520DB /* UIKit.framework */; };
+		A12279B719C3107A002520DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A12279B519C3107A002520DB /* InfoPlist.strings */; };
+		A12279B919C3107B002520DB /* Flappy_EmoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A12279B819C3107B002520DB /* Flappy_EmoTests.m */; };
+		A12279C419C31098002520DB /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = A12279C319C31098002520DB /* Game.m */; };
+		A12279C719C310A9002520DB /* iPadGame.m in Sources */ = {isa = PBXBuildFile; fileRef = A12279C619C310A9002520DB /* iPadGame.m */; };
+		A12279CA19C310BB002520DB /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12279C919C310BB002520DB /* InfoViewController.m */; };
+		A12279CD19C31104002520DB /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = A12279CB19C31104002520DB /* Background.png */; };
+		A12279CE19C31104002520DB /* Tunnels.png in Resources */ = {isa = PBXBuildFile; fileRef = A12279CC19C31104002520DB /* Tunnels.png */; };
+		A12279D319C3110C002520DB /* EmojiDown.png in Resources */ = {isa = PBXBuildFile; fileRef = A12279CF19C3110C002520DB /* EmojiDown.png */; };
+		A12279D419C3110C002520DB /* EmojiUp.png in Resources */ = {isa = PBXBuildFile; fileRef = A12279D019C3110C002520DB /* EmojiUp.png */; };
+		A12279D519C3110C002520DB /* GameMainMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = A12279D119C3110C002520DB /* GameMainMenu.png */; };
+		A12279D619C3110C002520DB /* InfoBackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = A12279D219C3110C002520DB /* InfoBackGround.png */; };
+		A12279D819C313D3002520DB /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12279D719C313D3002520DB /* iAd.framework */; };
+		A12693BF1A0DFC4C00AEF670 /* PlayGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = A12693BE1A0DFC4C00AEF670 /* PlayGameView.m */; };
+		A12693C21A0DFF4300AEF670 /* ArcadeModeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A12693C11A0DFF4300AEF670 /* ArcadeModeView.m */; };
+		A12693C41A0F67C400AEF670 /* Lives.png in Resources */ = {isa = PBXBuildFile; fileRef = A12693C31A0F67C400AEF670 /* Lives.png */; };
+		A12693C71A0F715F00AEF670 /* EmojiDownRed.png in Resources */ = {isa = PBXBuildFile; fileRef = A12693C51A0F715F00AEF670 /* EmojiDownRed.png */; };
+		A12693C81A0F715F00AEF670 /* EmojiUpRed.png in Resources */ = {isa = PBXBuildFile; fileRef = A12693C61A0F715F00AEF670 /* EmojiUpRed.png */; };
+		A159010F1A05035700C7234F /* EmojiDead.png in Resources */ = {isa = PBXBuildFile; fileRef = A159010E1A05035700C7234F /* EmojiDead.png */; };
+		A15901111A07EC6500C7234F /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15901101A07EC6500C7234F /* GameKit.framework */; };
+		A15901131A07EC7900C7234F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15901121A07EC7900C7234F /* AVFoundation.framework */; };
+		A15901191A08189300C7234F /* WinScore.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A15901181A08189300C7234F /* WinScore.mp3 */; };
+		A159011B1A08290C00C7234F /* ButtonClickSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A159011A1A08290C00C7234F /* ButtonClickSound.mp3 */; };
+		A159011F1A090AFD00C7234F /* StartWistle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A159011E1A090AFD00C7234F /* StartWistle.mp3 */; };
+		A15901211A090B1100C7234F /* LostSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A15901201A090B1100C7234F /* LostSound.mp3 */; };
+		A1DCAC261A21209300622BC3 /* iPadArcadeMode.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DCAC251A21209300622BC3 /* iPadArcadeMode.m */; };
+		A1FE5A5E1A21D2F700C493D1 /* LauchImageBack.png in Resources */ = {isa = PBXBuildFile; fileRef = A1FE5A5D1A21D2F700C493D1 /* LauchImageBack.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A12279B019C3107A002520DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A122797F19C3107A002520DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A122798619C3107A002520DB;
+			remoteInfo = "Flappy Emo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A122798719C3107A002520DB /* Flappy Emo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flappy Emo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A122798A19C3107A002520DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A122798C19C3107A002520DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A122798E19C3107A002520DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A122799219C3107A002520DB /* Flappy Emo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flappy Emo-Info.plist"; sourceTree = "<group>"; };
+		A122799419C3107A002520DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A122799619C3107A002520DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A122799819C3107A002520DB /* Flappy Emo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flappy Emo-Prefix.pch"; sourceTree = "<group>"; };
+		A122799919C3107A002520DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A122799A19C3107A002520DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A122799D19C3107A002520DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		A12279A019C3107A002520DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		A12279A219C3107A002520DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A12279A319C3107A002520DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A12279A519C3107A002520DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A12279AB19C3107A002520DB /* Flappy EmoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flappy EmoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12279AC19C3107A002520DB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A12279B419C3107A002520DB /* Flappy EmoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flappy EmoTests-Info.plist"; sourceTree = "<group>"; };
+		A12279B619C3107A002520DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A12279B819C3107B002520DB /* Flappy_EmoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Flappy_EmoTests.m; sourceTree = "<group>"; };
+		A12279C219C31098002520DB /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../Game.h; sourceTree = "<group>"; };
+		A12279C319C31098002520DB /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = ../Game.m; sourceTree = "<group>"; };
+		A12279C519C310A9002520DB /* iPadGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iPadGame.h; path = ../iPadGame.h; sourceTree = "<group>"; };
+		A12279C619C310A9002520DB /* iPadGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iPadGame.m; path = ../iPadGame.m; sourceTree = "<group>"; };
+		A12279C819C310BB002520DB /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoViewController.h; path = ../InfoViewController.h; sourceTree = "<group>"; };
+		A12279C919C310BB002520DB /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoViewController.m; path = ../InfoViewController.m; sourceTree = "<group>"; };
+		A12279CB19C31104002520DB /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		A12279CC19C31104002520DB /* Tunnels.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tunnels.png; sourceTree = "<group>"; };
+		A12279CF19C3110C002520DB /* EmojiDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EmojiDown.png; sourceTree = "<group>"; };
+		A12279D019C3110C002520DB /* EmojiUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EmojiUp.png; sourceTree = "<group>"; };
+		A12279D119C3110C002520DB /* GameMainMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameMainMenu.png; sourceTree = "<group>"; };
+		A12279D219C3110C002520DB /* InfoBackGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InfoBackGround.png; sourceTree = "<group>"; };
+		A12279D719C313D3002520DB /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		A12693BD1A0DFC4C00AEF670 /* PlayGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayGameView.h; sourceTree = SOURCE_ROOT; };
+		A12693BE1A0DFC4C00AEF670 /* PlayGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PlayGameView.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		A12693C01A0DFF4300AEF670 /* ArcadeModeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcadeModeView.h; sourceTree = SOURCE_ROOT; };
+		A12693C11A0DFF4300AEF670 /* ArcadeModeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ArcadeModeView.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		A12693C31A0F67C400AEF670 /* Lives.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lives.png; sourceTree = "<group>"; };
+		A12693C51A0F715F00AEF670 /* EmojiDownRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EmojiDownRed.png; sourceTree = "<group>"; };
+		A12693C61A0F715F00AEF670 /* EmojiUpRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EmojiUpRed.png; sourceTree = "<group>"; };
+		A159010E1A05035700C7234F /* EmojiDead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EmojiDead.png; sourceTree = "<group>"; };
+		A15901101A07EC6500C7234F /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		A15901121A07EC7900C7234F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A15901181A08189300C7234F /* WinScore.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WinScore.mp3; sourceTree = "<group>"; };
+		A159011A1A08290C00C7234F /* ButtonClickSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ButtonClickSound.mp3; sourceTree = "<group>"; };
+		A159011E1A090AFD00C7234F /* StartWistle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = StartWistle.mp3; sourceTree = "<group>"; };
+		A15901201A090B1100C7234F /* LostSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = LostSound.mp3; sourceTree = "<group>"; };
+		A1DCAC241A21209300622BC3 /* iPadArcadeMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadArcadeMode.h; sourceTree = "<group>"; };
+		A1DCAC251A21209300622BC3 /* iPadArcadeMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPadArcadeMode.m; sourceTree = "<group>"; };
+		A1FE5A5D1A21D2F700C493D1 /* LauchImageBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LauchImageBack.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A122798419C3107A002520DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15901131A07EC7900C7234F /* AVFoundation.framework in Frameworks */,
+				A12279D819C313D3002520DB /* iAd.framework in Frameworks */,
+				A122798D19C3107A002520DB /* CoreGraphics.framework in Frameworks */,
+				A122798F19C3107A002520DB /* UIKit.framework in Frameworks */,
+				A122798B19C3107A002520DB /* Foundation.framework in Frameworks */,
+				A15901111A07EC6500C7234F /* GameKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12279A819C3107A002520DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12279AD19C3107A002520DB /* XCTest.framework in Frameworks */,
+				A12279AF19C3107A002520DB /* UIKit.framework in Frameworks */,
+				A12279AE19C3107A002520DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A122797E19C3107A002520DB = {
+			isa = PBXGroup;
+			children = (
+				A122799019C3107A002520DB /* Flappy Emo */,
+				A12279B219C3107A002520DB /* Flappy EmoTests */,
+				A122798919C3107A002520DB /* Frameworks */,
+				A122798819C3107A002520DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A122798819C3107A002520DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A122798719C3107A002520DB /* Flappy Emo.app */,
+				A12279AB19C3107A002520DB /* Flappy EmoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A122798919C3107A002520DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A15901121A07EC7900C7234F /* AVFoundation.framework */,
+				A15901101A07EC6500C7234F /* GameKit.framework */,
+				A12279D719C313D3002520DB /* iAd.framework */,
+				A122798A19C3107A002520DB /* Foundation.framework */,
+				A122798C19C3107A002520DB /* CoreGraphics.framework */,
+				A122798E19C3107A002520DB /* UIKit.framework */,
+				A12279AC19C3107A002520DB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A122799019C3107A002520DB /* Flappy Emo */ = {
+			isa = PBXGroup;
+			children = (
+				A122799919C3107A002520DB /* AppDelegate.h */,
+				A122799A19C3107A002520DB /* AppDelegate.m */,
+				A122799C19C3107A002520DB /* Main_iPhone.storyboard */,
+				A122799F19C3107A002520DB /* Main_iPad.storyboard */,
+				A12279A219C3107A002520DB /* ViewController.h */,
+				A12279A319C3107A002520DB /* ViewController.m */,
+				A12693BD1A0DFC4C00AEF670 /* PlayGameView.h */,
+				A12693BE1A0DFC4C00AEF670 /* PlayGameView.m */,
+				A12279C219C31098002520DB /* Game.h */,
+				A12279C319C31098002520DB /* Game.m */,
+				A12279C519C310A9002520DB /* iPadGame.h */,
+				A12279C619C310A9002520DB /* iPadGame.m */,
+				A12693C01A0DFF4300AEF670 /* ArcadeModeView.h */,
+				A12693C11A0DFF4300AEF670 /* ArcadeModeView.m */,
+				A1DCAC241A21209300622BC3 /* iPadArcadeMode.h */,
+				A1DCAC251A21209300622BC3 /* iPadArcadeMode.m */,
+				A12279C819C310BB002520DB /* InfoViewController.h */,
+				A12279C919C310BB002520DB /* InfoViewController.m */,
+				A12279A519C3107A002520DB /* Images.xcassets */,
+				A122799119C3107A002520DB /* Supporting Files */,
+			);
+			path = "Flappy Emo";
+			sourceTree = "<group>";
+		};
+		A122799119C3107A002520DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A12279CB19C31104002520DB /* Background.png */,
+				A12279CC19C31104002520DB /* Tunnels.png */,
+				A12279D019C3110C002520DB /* EmojiUp.png */,
+				A12693C61A0F715F00AEF670 /* EmojiUpRed.png */,
+				A12279CF19C3110C002520DB /* EmojiDown.png */,
+				A12693C51A0F715F00AEF670 /* EmojiDownRed.png */,
+				A159010E1A05035700C7234F /* EmojiDead.png */,
+				A12279D119C3110C002520DB /* GameMainMenu.png */,
+				A12279D219C3110C002520DB /* InfoBackGround.png */,
+				A12693C31A0F67C400AEF670 /* Lives.png */,
+				A1FE5A5D1A21D2F700C493D1 /* LauchImageBack.png */,
+				A159011A1A08290C00C7234F /* ButtonClickSound.mp3 */,
+				A159011E1A090AFD00C7234F /* StartWistle.mp3 */,
+				A15901181A08189300C7234F /* WinScore.mp3 */,
+				A15901201A090B1100C7234F /* LostSound.mp3 */,
+				A122799219C3107A002520DB /* Flappy Emo-Info.plist */,
+				A122799319C3107A002520DB /* InfoPlist.strings */,
+				A122799619C3107A002520DB /* main.m */,
+				A122799819C3107A002520DB /* Flappy Emo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A12279B219C3107A002520DB /* Flappy EmoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A12279B819C3107B002520DB /* Flappy_EmoTests.m */,
+				A12279B319C3107A002520DB /* Supporting Files */,
+			);
+			path = "Flappy EmoTests";
+			sourceTree = "<group>";
+		};
+		A12279B319C3107A002520DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A12279B419C3107A002520DB /* Flappy EmoTests-Info.plist */,
+				A12279B519C3107A002520DB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A122798619C3107A002520DB /* Flappy Emo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A12279BC19C3107B002520DB /* Build configuration list for PBXNativeTarget "Flappy Emo" */;
+			buildPhases = (
+				A122798319C3107A002520DB /* Sources */,
+				A122798419C3107A002520DB /* Frameworks */,
+				A122798519C3107A002520DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Flappy Emo";
+			productName = "Flappy Emo";
+			productReference = A122798719C3107A002520DB /* Flappy Emo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A12279AA19C3107A002520DB /* Flappy EmoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A12279BF19C3107B002520DB /* Build configuration list for PBXNativeTarget "Flappy EmoTests" */;
+			buildPhases = (
+				A12279A719C3107A002520DB /* Sources */,
+				A12279A819C3107A002520DB /* Frameworks */,
+				A12279A919C3107A002520DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A12279B119C3107A002520DB /* PBXTargetDependency */,
+			);
+			name = "Flappy EmoTests";
+			productName = "Flappy EmoTests";
+			productReference = A12279AB19C3107A002520DB /* Flappy EmoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A122797F19C3107A002520DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Rayan Moarkech";
+				TargetAttributes = {
+					A122798619C3107A002520DB = {
+						DevelopmentTeam = S86ZE5EJCJ;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
+					};
+					A12279AA19C3107A002520DB = {
+						TestTargetID = A122798619C3107A002520DB;
+					};
+				};
+			};
+			buildConfigurationList = A122798219C3107A002520DB /* Build configuration list for PBXProject "Flappy Emo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A122797E19C3107A002520DB;
+			productRefGroup = A122798819C3107A002520DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A122798619C3107A002520DB /* Flappy Emo */,
+				A12279AA19C3107A002520DB /* Flappy EmoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A122798519C3107A002520DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A159011B1A08290C00C7234F /* ButtonClickSound.mp3 in Resources */,
+				A159011F1A090AFD00C7234F /* StartWistle.mp3 in Resources */,
+				A1FE5A5E1A21D2F700C493D1 /* LauchImageBack.png in Resources */,
+				A12279A119C3107A002520DB /* Main_iPad.storyboard in Resources */,
+				A12279A619C3107A002520DB /* Images.xcassets in Resources */,
+				A12279CD19C31104002520DB /* Background.png in Resources */,
+				A12693C81A0F715F00AEF670 /* EmojiUpRed.png in Resources */,
+				A12279CE19C31104002520DB /* Tunnels.png in Resources */,
+				A122799E19C3107A002520DB /* Main_iPhone.storyboard in Resources */,
+				A122799519C3107A002520DB /* InfoPlist.strings in Resources */,
+				A12279D319C3110C002520DB /* EmojiDown.png in Resources */,
+				A15901191A08189300C7234F /* WinScore.mp3 in Resources */,
+				A159010F1A05035700C7234F /* EmojiDead.png in Resources */,
+				A15901211A090B1100C7234F /* LostSound.mp3 in Resources */,
+				A12279D619C3110C002520DB /* InfoBackGround.png in Resources */,
+				A12279D519C3110C002520DB /* GameMainMenu.png in Resources */,
+				A12693C71A0F715F00AEF670 /* EmojiDownRed.png in Resources */,
+				A12279D419C3110C002520DB /* EmojiUp.png in Resources */,
+				A12693C41A0F67C400AEF670 /* Lives.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12279A919C3107A002520DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12279B719C3107A002520DB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A122798319C3107A002520DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12693BF1A0DFC4C00AEF670 /* PlayGameView.m in Sources */,
+				A12279A419C3107A002520DB /* ViewController.m in Sources */,
+				A12279C719C310A9002520DB /* iPadGame.m in Sources */,
+				A12279CA19C310BB002520DB /* InfoViewController.m in Sources */,
+				A1DCAC261A21209300622BC3 /* iPadArcadeMode.m in Sources */,
+				A122799B19C3107A002520DB /* AppDelegate.m in Sources */,
+				A122799719C3107A002520DB /* main.m in Sources */,
+				A12693C21A0DFF4300AEF670 /* ArcadeModeView.m in Sources */,
+				A12279C419C31098002520DB /* Game.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12279A719C3107A002520DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12279B919C3107B002520DB /* Flappy_EmoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A12279B119C3107A002520DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A122798619C3107A002520DB /* Flappy Emo */;
+			targetProxy = A12279B019C3107A002520DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A122799319C3107A002520DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A122799419C3107A002520DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A122799C19C3107A002520DB /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A122799D19C3107A002520DB /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		A122799F19C3107A002520DB /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A12279A019C3107A002520DB /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		A12279B519C3107A002520DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A12279B619C3107A002520DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A12279BA19C3107B002520DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dany Moarkech (647CRYJHUS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dany Moarkech (S86ZE5EJCJ)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "ee3bd87d-7fbc-4dc5-9b2c-df7fe2f84f14";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A12279BB19C3107B002520DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dany Moarkech (647CRYJHUS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dany Moarkech (S86ZE5EJCJ)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "ee3bd87d-7fbc-4dc5-9b2c-df7fe2f84f14";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A12279BD19C3107B002520DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flappy Emo/Flappy Emo-Prefix.pch";
+				INFOPLIST_FILE = "Flappy Emo/Flappy Emo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Rayan-Moarkech.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A12279BE19C3107B002520DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flappy Emo/Flappy Emo-Prefix.pch";
+				INFOPLIST_FILE = "Flappy Emo/Flappy Emo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Rayan-Moarkech.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A12279C019C3107B002520DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Flappy Emo.app/Flappy Emo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flappy Emo/Flappy Emo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Flappy EmoTests/Flappy EmoTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Rayan-Moarckech.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A12279C119C3107B002520DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Flappy Emo.app/Flappy Emo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flappy Emo/Flappy Emo-Prefix.pch";
+				INFOPLIST_FILE = "Flappy EmoTests/Flappy EmoTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Rayan-Moarckech.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		A1C4D70A19C33E29008DFBF7 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dany Moarkech (647CRYJHUS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dany Moarkech (S86ZE5EJCJ)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "ee3bd87d-7fbc-4dc5-9b2c-df7fe2f84f14";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		A1C4D70B19C33E29008DFBF7 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flappy Emo/Flappy Emo-Prefix.pch";
+				INFOPLIST_FILE = "Flappy Emo/Flappy Emo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Rayan-Moarkech.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		A1C4D70C19C33E29008DFBF7 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Flappy Emo.app/Flappy Emo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flappy Emo/Flappy Emo-Prefix.pch";
+				INFOPLIST_FILE = "Flappy EmoTests/Flappy EmoTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Rayan-Moarckech.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A122798219C3107A002520DB /* Build configuration list for PBXProject "Flappy Emo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A12279BA19C3107B002520DB /* Debug */,
+				A12279BB19C3107B002520DB /* Release */,
+				A1C4D70A19C33E29008DFBF7 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A12279BC19C3107B002520DB /* Build configuration list for PBXNativeTarget "Flappy Emo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A12279BD19C3107B002520DB /* Debug */,
+				A12279BE19C3107B002520DB /* Release */,
+				A1C4D70B19C33E29008DFBF7 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A12279BF19C3107B002520DB /* Build configuration list for PBXNativeTarget "Flappy EmoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A12279C019C3107B002520DB /* Debug */,
+				A12279C119C3107B002520DB /* Release */,
+				A1C4D70C19C33E29008DFBF7 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A122797F19C3107A002520DB /* Project object */;
+}
